@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Survey Form</title>
+	</head>
+	<body>
+		<header>
+			<h1 id="title">Bahadir Software Service Quality Form</h1>
+			<p id="description">Thanks for your time</p>
+		</header>
+		<form id="survey-form">
+			<div class="form-group">
+				<label id="name-label" for="name">Name</label><br />
+				<input
+					type="text"
+					id="name"
+					name="name"
+					placeholder="Enter your name"
+					required
+				/>
+			</div>
+
+			<div class="form-group">
+				<label id="email-label" for="email">Email</label><br />
+				<input
+					type="email"
+					id="email"
+					name="email"
+					placeholder="Enter your Email"
+					required
+				/>
+			</div>
+			<div class="form-group">
+				<label id="number-label" for="age">Age</label><br />
+				<input
+					type="number"
+					id="number"
+					name="number"
+					min="0"
+					max="99"
+					placeholder="Age"
+					required
+				/><br />
+			</div>
+			<div class="form-group">
+				<p>What is your job?</p>
+				<select name="dropdown" id="dropdown">
+					<optgroup label="Select your job">
+						<option value="student">Student</option>
+						<option value="frontend">Frontend Developer</option>
+						<option value="backend">Backend Developer</option>
+						<option value="fullstack">Fullstack Developer</option>
+						<option value="uiux">UI/UX Developer</option>
+					</optgroup>
+				</select>
+			</div>
+			<div class="form-group">
+				<p>Did you hear about us before?</p>
+				<input type="radio" id="us1" name="us" value="definitely" checked />
+				<label for="us1">Definitely</label><br />
+				<input type="radio" id="us2" name="us" value="maybe" />
+				<label for="us2">Maybe</label><br />
+				<input type="radio" id="us3" name="us" value="notSure" />
+				<label for="us3">Not sure</label><br />
+			</div>
+
+			<div class="form-group">
+				<p>How experienced are you in software development?</p>
+				<input type="radio" id="exp1" name="exp" value="0-1" checked />
+				<label for="exp1">0-1</label><br />
+				<input type="radio" id="exp2" name="exp" value="1-2" />
+				<label for="exp2">1-2</label><br />
+				<input type="radio" id="exp3" name="exp" value="2-3" />
+				<label for="exp3">2-3</label><br />
+				<input type="radio" id="exp4" name="exp" value="3+" />
+				<label for="exp4">3+</label><br />
+			</div>
+
+			<div class="form-group">
+				<p>What kind of software do you expect us to develop?</p>
+				<input type="checkbox" id="box1" name="box1" value="saas" />
+				<label for="box1">SaaS</label><br />
+				<input type="checkbox" id="box2" name="paas" />
+				<label for="box2">PaaS</label><br />
+				<input type="checkbox" id="box3" name="box3" value="ecommerce" />
+				<label for="box3">E-commerce web site</label><br />
+				<input type="checkbox" id="box4" name="box4" value="entertainment" />
+				<label for="box4">Entertainment</label><br />
+				<input type="checkbox" id="box5" name="box5" value="social" />
+				<label for="box5">Social media</label><br />
+				<input type="checkbox" id="box6" name="box6" value="forum" />
+				<label for="box6">Forum</label><br />
+			</div>
+			<div class="form-group">
+				<label for="comment">Any comments or suggestions?</label><br />
+				<textarea
+					name="comment"
+					id="comment"
+					cols="30"
+					rows="10"
+					placeholder="Your comments"
+				></textarea>
+			</div>
+			<div class="form-group submit">
+				<button id="submit" type="submit">Submit</button>
+			</div>
+		</form>
+	</body>
+</html>
